@@ -4,10 +4,7 @@
   "description": "A beginner web project for Grade 8 students using GitHub Copilot",
   "private": true,
   "scripts": {
-    "prestart": "npm install",
+    "prestart": "npm install --prefix private",
     "start": "node private/server.js"
-  },
-  "dependencies": {
-    "express": "^4.21.2"
   }
 }

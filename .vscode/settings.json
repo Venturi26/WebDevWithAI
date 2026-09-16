@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.devcontainer": true,
+    "**/.vscode": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true
+  }
+}

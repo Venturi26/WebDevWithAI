@@ -8,13 +8,23 @@
       "onAutoForward": "notify"
     }
   },
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "npm install --prefix private",
   "customizations": {
     "vscode": {
       "extensions": [
         "GitHub.copilot",
         "GitHub.copilot-chat"
-      ]
+      ],
+      "settings": {
+        "files.exclude": {
+          "**/.git": true,
+          "**/.gitignore": true,
+          "**/.devcontainer": true,
+          "**/.vscode": true,
+          "**/node_modules": true,
+          "**/package-lock.json": true
+        }
+      }
     }
   }
 }
