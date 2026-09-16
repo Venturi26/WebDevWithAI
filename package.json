@@ -1,0 +1,13 @@
+{
+  "name": "my-first-website",
+  "version": "1.0.0",
+  "description": "A beginner web project for Grade 8 students using GitHub Copilot",
+  "private": true,
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node private/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
