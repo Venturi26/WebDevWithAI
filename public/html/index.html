@@ -3,13 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>BikesOnHigh</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <!-- Lesson 1: Ask Copilot to build your page layout here. -->
-    <h1>Your website will appear here</h1>
-    <p>Open <strong>public/html/index.html</strong> and start Lesson 1 in the README.</p>
+    <header class="site-header">
+      <div class="header-content nav-header">
+        <div class="site-title">
+          <a class="brand-link" href="/">
+            <span class="brand-wordmark">
+              <span>BIKES</span>
+              <span class="brand-accent">on</span>
+              <span>HIGH</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="review-rotator" aria-live="polite" aria-atomic="true">
+          <p class="review-text" id="review-text">“Great bikes and even better service.”</p>
+          <p class="review-author" id="review-author">— Sarah</p>
+        </div>
+
+        <label class="search-wrap" aria-label="Search site">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input type="search" name="site-search" placeholder="Search" />
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">BikesOnHigh <span aria-hidden="true">/</span> Rockhampton, Queensland</p>
+            <h1 id="hero-heading">Quality bikes brought to you by a quality business</h1>
+            <p class="hero-description">Visit BikesOnHigh at 83 High Street, Rockhampton. Call, email, or drop in during open hours to talk anything bikes.</p>
+            <a class="shop-link hero-shop-link" href="/bikes.html">Buy a bike!</a>
+          </div>
+          <figure class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+              alt="Mountain biker in an orange jacket riding a rocky trail through the forest"
+              width="1400"
+              height="1050"
+              fetchpriority="high"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h2 class="footer-title">Contact Us!</h2>
+        <section class="footer-details" aria-label="Store contact details">
+          <dl>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+61749363330">07 4936 3330</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:sales@bikeonhigh.com.au">sales@bikeonhigh.com.au</a></dd>
+            </div>
+            <div>
+              <dt>Visit</dt>
+              <dd><address>83 High Street Rockhampton QLD 4701</address></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd><time datetime="08:00">8am</time>-<time datetime="16:00">4pm</time> Mon-Sat</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </footer>
 
     <script src="/js/script.js"></script>
   </body>

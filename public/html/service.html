@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Bike Service | BikesOnHigh</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="shop-page">
+    <header class="site-header">
+      <div class="header-content page-header-bar">
+        <div class="header-main">
+          <div class="site-title">
+            <a class="brand-link" href="/">
+              <span class="brand-wordmark">
+                <span>BIKES</span>
+                <span class="brand-accent">on</span>
+                <span>HIGH</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <a class="cart-link" href="/cart.html" aria-label="Shopping cart, 0 items">
+          Cart <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+      <p class="cart-status" id="cart-status" role="status" hidden></p>
+      <nav class="primary-nav header-content" aria-label="Main navigation">
+        <a href="/bikes.html">Shop bikes</a>
+        <a href="/contact.html">contact us!</a>
+        <a href="/service.html" aria-current="page">Book a bike service</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-shell">
+        <header class="page-header">
+          <p class="hero-eyebrow">
+            <a href="/" class="crumb-link">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Book a bike service</span>
+          </p>
+          <h1>Book a bike service</h1>
+          <p>Choose an open day and an appointment time to request a service. We’re open Monday to Saturday, 8am–4pm, and closed Sundays. We’ll confirm your booking by email.</p>
+        </header>
+
+        <figure class="service-booking-image">
+          <img
+            src="https://www.parktool.com/assets/img/repairhelp/New-Shop-Recommended-Tool-List-01.jpg"
+            alt="A mechanic working on a bicycle in a bike shop"
+            width="1100"
+            height="733"
+          />
+          <figcaption>Our team is here to help keep your bike running smoothly.</figcaption>
+        </figure>
+
+        <section class="service-booking" aria-label="Service booking calendar">
+          <div class="service-calendar">
+            <div class="calendar-heading">
+              <button id="calendar-previous" class="calendar-month-button" type="button" aria-label="Previous month">‹</button>
+              <h2 id="calendar-month" aria-live="polite"></h2>
+              <button id="calendar-next" class="calendar-month-button" type="button" aria-label="Next month">›</button>
+            </div>
+            <div class="calendar-grid" id="service-calendar-grid" aria-label="Choose a service date"></div>
+            <p class="calendar-legend">
+              <span class="calendar-legend-open">Open for bookings</span>
+              <span class="calendar-legend-closed">Closed Sunday</span>
+            </p>
+          </div>
+
+          <section class="service-times" aria-labelledby="service-times-title">
+            <h2 id="service-times-title">Available spots</h2>
+            <p id="service-times-message" aria-live="polite">Choose an open day on the calendar to see appointment times.</p>
+            <div id="service-time-options" class="service-time-options"></div>
+            <h3 class="service-options-title">Choose a service</h3>
+            <div id="service-options" class="service-options" aria-label="Bike service options"></div>
+            <form id="service-request-form" class="service-request-form" hidden>
+              <h3>Complete your booking</h3>
+              <p id="service-selection-summary" aria-live="polite"></p>
+              <label>
+                Your name
+                <input name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Email address
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+              <label>
+                Bike and service details
+                <textarea name="details" rows="3" placeholder="Bike make/model and the service you need" required></textarea>
+              </label>
+              <button class="shop-link service-submit" type="submit">Complete booking</button>
+            </form>
+          </section>
+          <p class="service-booking-note">Appointment times are requests, not confirmed bookings. The shop will reply to confirm availability.</p>
+          <p class="service-pricing-note">Service prices shown are estimates only. Final pricing may vary with your bike and any parts required; the shop will confirm the quote with you.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-content">
+        <h2 class="footer-title">Contact Us!</h2>
+        <section class="footer-details" aria-label="Store contact details">
+          <dl>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+61749363330">07 4936 3330</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:sales@bikeonhigh.com.au">sales@bikeonhigh.com.au</a></dd>
+            </div>
+            <div>
+              <dt>Visit</dt>
+              <dd><address><a href="https://www.google.com/maps/search/?api=1&amp;query=83+High+Street+Rockhampton+QLD+4701" target="_blank" rel="noreferrer">83 High Street Rockhampton QLD 4701</a></address></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd><time datetime="08:00">8am</time>-<time datetime="16:00">4pm</time> Mon-Sat</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

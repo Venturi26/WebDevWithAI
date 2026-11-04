@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart | BikesOnHigh</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="shop-page cart-page">
+    <header class="site-header">
+      <div class="header-content page-header-bar">
+        <div class="header-main">
+          <div class="site-title">
+            <a class="brand-link" href="/">
+              <span class="brand-wordmark">
+                <span>BIKES</span>
+                <span class="brand-accent">on</span>
+                <span>HIGH</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <a class="cart-link" href="/cart.html" aria-current="page" aria-label="Shopping cart">
+          Cart <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+      <p class="cart-status" id="cart-status" role="status" hidden></p>
+      <nav class="primary-nav header-content" aria-label="Main navigation">
+        <a href="/bikes.html">Shop bikes</a>
+        <a href="/contact.html">contact us!</a>
+        <a href="/service.html">Book a bike service</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-shell">
+        <header class="page-header">
+          <p class="hero-eyebrow">
+            <a href="/" class="crumb-link">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Your cart</span>
+          </p>
+          <h1>Your cart</h1>
+          <p>Review the bikes you’ve added. Prices and availability are confirmed by the shop.</p>
+        </header>
+
+        <section class="cart-content" aria-label="Shopping cart">
+          <p id="cart-empty" class="cart-empty" hidden>Your cart is empty. Browse the bikes and add one to get started.</p>
+          <div id="cart-items" class="cart-items"></div>
+          <div id="cart-summary" class="cart-summary" hidden>
+            <p class="cart-subtotal-row"><span>Estimated subtotal</span><strong id="cart-subtotal">$0</strong></p>
+            <p class="cart-disclaimer">This is a request list, not a confirmed order. Contact the shop to check availability and arrange your purchase.</p>
+            <div class="cart-actions">
+              <a class="shop-link" href="/bikes.html">Continue shopping</a>
+              <a class="cart-contact-link" href="/contact.html">Contact the shop</a>
+              <button id="checkout-cart" class="cart-checkout-button" type="button">Checkout</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content contact-footer-content">
+        <p>Questions about a bike? We’re happy to help.</p>
+        <a href="/contact.html">Contact us</a>
+      </div>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category | BikesOnHigh</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="shop-page">
+    <header class="site-header">
+      <div class="header-content page-header-bar">
+        <div class="header-main">
+          <div class="site-title">
+            <a class="brand-link" href="/">
+              <span class="brand-wordmark">
+                <span>BIKES</span>
+                <span class="brand-accent">on</span>
+                <span>HIGH</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <a class="cart-link" href="/cart.html" aria-label="Shopping cart, 0 items">
+          Cart <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+      <p class="cart-status" id="cart-status" role="status" hidden></p>
+      <nav class="primary-nav header-content" aria-label="Main navigation">
+        <a href="/bikes.html">Shop bikes</a>
+        <a href="/contact.html">contact us!</a>
+        <a href="/service.html">Book a bike service</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-shell">
+        <section id="category-detail" class="category-detail">
+          <div class="category-detail-header">
+            <p class="hero-eyebrow">
+              <a href="/" class="crumb-link">Home</a>
+              <span aria-hidden="true">/</span>
+              <a href="/bikes.html" class="crumb-link">Shop</a>
+              <span aria-hidden="true">/</span>
+              <span id="category-page-name">Category</span>
+            </p>
+            <h2 id="category-page-title">Category</h2>
+            <p id="category-page-description"></p>
+          </div>
+          <div id="category-bike-list" class="category-bike-list"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-content">
+        <h2 class="footer-title">Contact Us!</h2>
+        <section class="footer-details" aria-label="Store contact details">
+          <dl>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+61749363330">07 4936 3330</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:sales@bikeonhigh.com.au">sales@bikeonhigh.com.au</a></dd>
+            </div>
+            <div>
+              <dt>Visit</dt>
+              <dd><address><a href="https://www.google.com/maps/search/?api=1&amp;query=83+High+Street+Rockhampton+QLD+4701" target="_blank" rel="noreferrer">83 High Street Rockhampton QLD 4701</a></address></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd><time datetime="08:00">8am</time>-<time datetime="16:00">4pm</time> Mon-Sat</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

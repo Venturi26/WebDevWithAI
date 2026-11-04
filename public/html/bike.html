@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Details | BikesOnHigh</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="shop-page">
+    <header class="site-header">
+      <div class="header-content page-header-bar">
+        <div class="header-main">
+          <div class="site-title">
+            <a class="brand-link" href="/">
+              <span class="brand-wordmark">
+                <span>BIKES</span>
+                <span class="brand-accent">on</span>
+                <span>HIGH</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <a class="cart-link" href="/cart.html" aria-label="Shopping cart, 0 items">
+          Cart <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+      <p class="cart-status" id="cart-status" role="status" hidden></p>
+      <nav class="primary-nav header-content" aria-label="Main navigation">
+        <a href="/bikes.html">Shop bikes</a>
+        <a href="/contact.html">contact us!</a>
+        <a href="/service.html">Book a bike service</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-shell">
+        <section id="bike-detail" class="bike-detail" hidden>
+          <p class="hero-eyebrow">
+            <a href="/" class="crumb-link">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="/bikes.html" class="crumb-link">Shop</a>
+            <span aria-hidden="true">/</span>
+            <a id="bike-detail-category-link" class="crumb-link" href="/bikes.html">Category</a>
+          </p>
+          <p id="bike-detail-error" class="bike-detail-error" role="alert" hidden></p>
+
+          <div id="bike-detail-content" hidden>
+            <div class="bike-detail-overview">
+              <div class="bike-detail-image-wrap">
+                <img id="bike-detail-image" alt="" />
+                <p id="bike-detail-image-note" hidden>No image is currently available for this bike.</p>
+              </div>
+              <div class="bike-detail-intro">
+                <h1 id="bike-detail-title"></h1>
+                <p id="bike-detail-description"></p>
+                <p class="bike-detail-price">Listed price: <strong id="bike-detail-price"></strong></p>
+                <button id="bike-detail-add-to-cart" class="add-to-cart-button" type="button">Add to cart</button>
+              </div>
+            </div>
+
+            <section class="bike-specifications" aria-labelledby="bike-specifications-heading">
+              <h2 id="bike-specifications-heading">Specifications</h2>
+              <dl id="bike-specification-list"></dl>
+              <p class="bike-specification-note">
+                Component specifications can vary by model year and build. Contact the shop to confirm the exact specification for this bike.
+              </p>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-content">
+        <h2 class="footer-title">Contact Us!</h2>
+        <section class="footer-details" aria-label="Store contact details">
+          <dl>
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+61749363330">07 4936 3330</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:sales@bikeonhigh.com.au">sales@bikeonhigh.com.au</a></dd>
+            </div>
+            <div>
+              <dt>Visit</dt>
+              <dd><address><a href="https://www.google.com/maps/search/?api=1&amp;query=83+High+Street+Rockhampton+QLD+4701" target="_blank" rel="noreferrer">83 High Street Rockhampton QLD 4701</a></address></dd>
+            </div>
+            <div>
+              <dt>Hours</dt>
+              <dd><time datetime="08:00">8am</time>-<time datetime="16:00">4pm</time> Mon-Sat</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
