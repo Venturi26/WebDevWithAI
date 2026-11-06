@@ -1,13 +1,14 @@
 :root {
-	color-scheme: light;
+	color-scheme: dark;
 	font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-	background: #f4f5ef;
-	color: #172d27;
+	background: #000;
+	color: #f5f5f5;
 }
 
 body {
 	min-width: 320px;
 	margin: 0;
+	background: #000;
 }
 
 .site-header {
@@ -18,6 +19,32 @@ body {
 .header-content {
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+.primary-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 12px clamp(20px, 4vw, 48px);
+	padding-top: 16px;
+}
+
+.primary-nav a {
+	padding: 8px 0;
+	color: #f5f5f5;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus-visible,
+.primary-nav a[aria-current="page"] {
+	color: #ef8a1c;
+}
+
+.primary-nav a:focus-visible {
+	outline: 2px solid #38a6a8;
+	outline-offset: 4px;
 }
 
 .nav-header {
@@ -140,7 +167,7 @@ body {
 }
 
 .site-footer {
-	background: #111;
+	background: #000;
 	color: #f5f5f5;
 }
 
@@ -197,7 +224,7 @@ body {
 }
 
 .hero {
-	background: #f4f5ef;
+	background: #000;
 }
 
 .hero-inner {
@@ -216,7 +243,7 @@ body {
 
 .hero-eyebrow {
 	margin: 0 0 18px;
-	color: #147d7f;
+	color: #38a6a8;
 	font-size: 0.85rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -228,7 +255,7 @@ body {
 }
 
 .crumb-link {
-	color: #147d7f;
+	color: #38a6a8;
 	text-decoration: none;
 }
 
@@ -240,7 +267,7 @@ body {
 
 .hero-copy h1 {
 	margin: 0;
-	color: #172d27;
+	color: #f5f5f5;
 	font-size: 3rem;
 	line-height: 1.08;
 }
@@ -248,7 +275,7 @@ body {
 .hero-description {
 	max-width: 440px;
 	margin: 22px 0 28px;
-	color: #46534e;
+	color: #c3ccc7;
 	font-size: 1.1rem;
 	line-height: 1.6;
 }
@@ -261,10 +288,11 @@ body {
 }
 
 .hero-image {
+	position: relative;
 	min-width: 0;
 	margin: 0;
 	overflow: hidden;
-	background: #d3d9d2;
+	background: #111;
 }
 
 .hero-image img {
@@ -277,6 +305,53 @@ body {
 	object-position: center;
 }
 
+.store-image-hero {
+	padding: 48px clamp(20px, 6vw, 88px) 64px;
+	background: #000;
+}
+
+.store-image-hero-inner {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	align-items: center;
+	gap: clamp(24px, 5vw, 64px);
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.store-image-hero-image {
+	margin: 0;
+}
+
+.store-image-hero h2 {
+	margin: 0 0 24px;
+	color: #f5f5f5;
+	font-size: clamp(1.7rem, 3vw, 2.5rem);
+}
+
+.store-image-hero-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.store-image-hero-copy p {
+	margin: 0;
+	color: #c3ccc7;
+	font-size: 1.05rem;
+	line-height: 1.7;
+}
+
+.store-image-hero-copy a {
+	color: #38a6a8;
+	font-weight: 700;
+}
+
+.store-image-hero-copy a:hover {
+	color: #ef8a1c;
+}
+
 @media (max-width: 760px) {
 	.nav-header {
 		grid-template-columns: 1fr;
@@ -286,6 +361,10 @@ body {
 	.header-main {
 		flex-direction: column;
 		gap: 16px;
+	}
+
+	.primary-nav {
+		gap: 8px 20px;
 	}
 
 	.review-rotator {
@@ -310,6 +389,10 @@ body {
 	.hero-image img {
 		min-height: 0;
 		aspect-ratio: 4 / 3;
+	}
+
+	.store-image-hero-inner {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -337,8 +420,8 @@ body {
 }
 
 .shop-page {
-	background: #f4f5ef;
-	color: #172d27;
+	background: #000;
+	color: #f5f5f5;
 }
 
 .shop-page .page-shell {
@@ -362,7 +445,7 @@ body {
 	max-width: 640px;
 	font-size: 1.05rem;
 	line-height: 1.6;
-	color: #46534e;
+	color: #c3ccc7;
 }
 
 .product-grid {
@@ -377,6 +460,25 @@ body {
 	border-radius: 12px;
 	overflow: hidden;
 	box-shadow: 0 8px 22px rgba(17, 17, 17, 0.05);
+	color: #172d27;
+}
+
+.bike-category-card {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.bike-category-card:hover {
+	transform: translateY(-3px);
+	border-color: #38a6a8;
+	box-shadow: 0 12px 26px rgba(17, 17, 17, 0.12);
+}
+
+.bike-category-card:focus-visible {
+	outline: 3px solid #147d7f;
+	outline-offset: 3px;
 }
 
 .product-card img {
@@ -408,8 +510,61 @@ body {
 	font-weight: 700;
 }
 
+.bike-category-grid {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.category-detail-header {
+	margin-bottom: 32px;
+}
+
+.category-detail-header h1 {
+	margin: 0 0 12px;
+	font-size: clamp(2.2rem, 4vw, 3.3rem);
+	line-height: 1.1;
+}
+
+.category-detail-header > p:last-child {
+	max-width: 640px;
+	margin: 0;
+	color: #c3ccc7;
+	font-size: 1.05rem;
+	line-height: 1.6;
+}
+
+.category-page-error {
+	margin: 0 0 20px;
+	color: #ff8c80;
+	font-weight: 700;
+}
+
+.category-availability-card {
+	max-width: 640px;
+	padding: 24px;
+	border: 1px solid #d9dfd8;
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: 0 8px 22px rgba(17, 17, 17, 0.05);
+	color: #172d27;
+}
+
+.category-availability-card h2 {
+	margin: 0 0 8px;
+	font-size: 1.35rem;
+}
+
+.category-availability-card p {
+	margin: 0 0 20px;
+	color: #46534e;
+	line-height: 1.5;
+}
+
 @media (max-width: 900px) {
 	.product-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.bike-category-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
@@ -418,5 +573,8 @@ body {
 	.product-grid {
 		grid-template-columns: 1fr;
 	}
-}
 
+	.bike-category-grid {
+		grid-template-columns: 1fr;
+	}
+}
