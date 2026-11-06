@@ -12,7 +12,7 @@ body {
 }
 
 .site-header {
-	padding: 18px clamp(16px, 6vw, 88px) 20px;
+	padding: 18px clamp(16px, 6vw, 88px) 0;
 	background: #000;
 }
 
@@ -24,13 +24,14 @@ body {
 .primary-nav {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	gap: 12px clamp(20px, 4vw, 48px);
-	padding-top: 16px;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4px clamp(20px, 4vw, 48px);
+	padding-top: 8px;
 }
 
 .primary-nav a {
-	padding: 8px 0;
+	padding: 4px 0;
 	color: #f5f5f5;
 	font-weight: 700;
 	text-decoration: none;
@@ -43,6 +44,52 @@ body {
 }
 
 .primary-nav a:focus-visible {
+	outline: 2px solid #38a6a8;
+	outline-offset: 4px;
+}
+
+.primary-nav .cart-nav-link {
+	margin-left: auto;
+	padding: 9px 18px;
+	border-radius: 4px;
+	background: #ff8a00;
+	color: #111;
+}
+
+.primary-nav .cart-nav-link:hover,
+.primary-nav .cart-nav-link:focus-visible,
+.primary-nav .cart-nav-link[aria-current="page"] {
+	background: #ffa43a;
+	color: #111;
+}
+
+.header-actions {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.header-actions .search-wrap {
+	margin-right: 0;
+}
+
+.header-cart-link {
+	flex: none;
+	padding: 9px 18px;
+	border-radius: 4px;
+	background: #ff8a00;
+	color: #111;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.header-cart-link:hover,
+.header-cart-link:focus-visible {
+	background: #ffa43a;
+	color: #111;
+}
+
+.header-cart-link:focus-visible {
 	outline: 2px solid #38a6a8;
 	outline-offset: 4px;
 }
@@ -64,7 +111,7 @@ body {
 
 .site-title {
 	margin: 0;
-	font-size: 2rem;
+	font-size: 3.12rem;
 	line-height: 1;
 }
 
@@ -119,6 +166,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 8px;
+	margin-right: 24px;
 	padding: 9px 12px;
 	border: 1px solid #3a3a3a;
 	border-radius: 999px;
@@ -234,7 +282,7 @@ body {
 	gap: clamp(32px, 6vw, 88px);
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 64px clamp(20px, 6vw, 88px) 76px;
+	padding: 16px clamp(20px, 6vw, 88px) 76px;
 }
 
 .hero-copy {
@@ -367,6 +415,19 @@ body {
 		gap: 8px 20px;
 	}
 
+	.primary-nav .cart-nav-link {
+		margin-left: auto;
+	}
+
+	.search-wrap {
+		margin-right: 0;
+	}
+
+	.header-actions {
+		width: 100%;
+		justify-content: center;
+	}
+
 	.review-rotator {
 		max-width: 100%;
 	}
@@ -378,7 +439,7 @@ body {
 	.hero-inner {
 		grid-template-columns: 1fr;
 		gap: 32px;
-		padding-top: 48px;
+		padding-top: 16px;
 		padding-bottom: 48px;
 	}
 
@@ -398,7 +459,7 @@ body {
 
 @media (max-width: 380px) {
 	.site-title {
-		font-size: 1.45rem;
+		font-size: 2.262rem;
 	}
 
 	.shop-link {
@@ -497,6 +558,17 @@ body {
 	font-size: 1.35rem;
 }
 
+.bike-category-card h2 {
+	color: #000;
+}
+
+.bike-category-card .category-price-range {
+	display: block;
+	margin-top: 14px;
+	color: #147d7f;
+	font-size: 0.95rem;
+}
+
 .product-card p {
 	margin: 0;
 	color: #46534e;
@@ -538,25 +610,384 @@ body {
 	font-weight: 700;
 }
 
-.category-availability-card {
-	max-width: 640px;
-	padding: 24px;
+.category-bike-list {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.category-bike-card {
+	overflow: hidden;
+	padding: 22px;
 	border: 1px solid #d9dfd8;
 	border-radius: 12px;
 	background: #fff;
-	box-shadow: 0 8px 22px rgba(17, 17, 17, 0.05);
+	color: #172d27;
+	box-shadow: 0 8px 22px rgba(17, 17, 17, 0.08);
+}
+
+.category-bike-image {
+	display: block;
+	width: calc(100% + 44px);
+	height: 200px;
+	margin: -22px -22px 18px;
+	object-fit: cover;
+}
+
+.category-bike-brand {
+	margin: 0 0 8px;
+	color: #147d7f;
+	font-size: 0.85rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.category-bike-card h2 {
+	margin: 0 0 18px;
+	color: #000;
+	font-size: 1.3rem;
+}
+
+.category-bike-price {
+	margin: 0 0 18px;
+	color: #46534e;
+	font-weight: 700;
+}
+
+.category-bike-card a {
+	color: #147d7f;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.category-bike-card a:hover,
+.category-bike-card a:focus-visible {
+	color: #ef8a1c;
+	text-decoration: underline;
+}
+
+.add-to-cart-button,
+.cart-remove-button {
+	padding: 10px 14px;
+	border: 0;
+	border-radius: 4px;
+	background: #ef8a1c;
+	color: #111;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.add-to-cart-button:hover,
+.cart-remove-button:hover {
+	background: #ffa43a;
+}
+
+.add-to-cart-button:focus-visible,
+.cart-remove-button:focus-visible {
+	outline: 3px solid #147d7f;
+	outline-offset: 3px;
+}
+
+.cart-status {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 8px clamp(16px, 6vw, 88px);
+	color: #d6f278;
+}
+
+.cart-content {
+	color: #f5f5f5;
+}
+
+.cart-empty {
+	margin: 0;
+}
+
+.cart-items {
+	display: grid;
+	gap: 16px;
+}
+
+.cart-item {
+	padding: 18px;
+	border-radius: 10px;
+	background: #fff;
 	color: #172d27;
 }
 
-.category-availability-card h2 {
+.cart-item h2 {
 	margin: 0 0 8px;
+	font-size: 1.2rem;
+}
+
+.cart-item p {
+	margin: 0 0 12px;
+}
+
+.cart-summary {
+	margin-top: 24px;
+	padding: 20px;
+	border-radius: 10px;
+	background: #1b1b1b;
+}
+
+.cart-subtotal-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	font-size: 1.15rem;
+}
+
+.cart-disclaimer {
+	color: #c3ccc7;
+	line-height: 1.5;
+}
+
+.cart-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 16px;
+}
+
+.cart-contact-link {
+	color: #38a6a8;
+	font-weight: 700;
+}
+
+.cart-checkout-button {
+	padding: 12px 22px;
+	border: 0;
+	border-radius: 4px;
+	background: #ff8a00;
+	color: #111;
+	font: inherit;
+	font-size: 1.1rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.cart-checkout-button:hover {
+	background: #ffa43a;
+}
+
+.cart-checkout-button:focus-visible {
+	outline: 3px solid #38a6a8;
+	outline-offset: 3px;
+}
+
+.bike-detail-overview {
+	display: grid;
+	grid-template-columns: minmax(0, 1.2fr) minmax(280px, 1fr);
+	align-items: start;
+	gap: 32px;
+}
+
+.bike-detail-image-wrap {
+	overflow: hidden;
+	border-radius: 12px;
+	background: #1b1b1b;
+}
+
+.bike-detail-image-wrap img {
+	display: block;
+	width: 100%;
+	max-height: 520px;
+	object-fit: cover;
+}
+
+.bike-detail-image-wrap img[hidden] {
+	display: none;
+}
+
+.bike-detail-image-wrap p {
+	margin: 0;
+	padding: 20px;
+	color: #c3ccc7;
+}
+
+.bike-detail-intro h1 {
+	margin: 0 0 16px;
+	font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.bike-detail-intro > p {
+	line-height: 1.6;
+}
+
+.bike-frame-size {
+	display: grid;
+	gap: 8px;
+	margin: 24px 0;
+}
+
+.bike-frame-size label {
+	font-weight: 700;
+}
+
+.bike-frame-size select {
+	width: 100%;
+	max-width: 320px;
+	padding: 10px 12px;
+	border: 1px solid #c3ccc7;
+	border-radius: 4px;
+	background: #fff;
+	color: #172d27;
+	font: inherit;
+}
+
+.bike-frame-size select:focus-visible {
+	outline: 3px solid #38a6a8;
+	outline-offset: 2px;
+}
+
+.bike-frame-size p {
+	margin: 0;
+	max-width: 420px;
+	color: #c3ccc7;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+.add-to-cart-button:disabled {
+	background: #777;
+	color: #222;
+	cursor: not-allowed;
+}
+
+.contact-page-header {
+	margin-bottom: 32px;
+}
+
+.contact-page-header .hero-eyebrow {
+	font-size: 1.05rem;
+}
+
+.contact-page-header h1 {
+	margin: 0 0 12px;
+	font-size: clamp(2.2rem, 4vw, 3.3rem);
+	line-height: 1.1;
+}
+
+.contact-page-header > p:last-child {
+	max-width: 640px;
+	margin: 0;
+	color: #c3ccc7;
+	font-size: 1.05rem;
+	line-height: 1.6;
+}
+
+.contact-card-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.contact-info-card {
+	padding: 24px;
+	border: 1px solid #d9dfd8;
+	border-radius: 14px;
+	background: #fff;
+	color: #172d27;
+	box-shadow: 0 8px 22px rgba(17, 17, 17, 0.12);
+}
+
+.contact-card-kicker {
+	color: #147d7f;
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.contact-info-card h2 {
+	margin: 10px 0;
 	font-size: 1.35rem;
 }
 
-.category-availability-card p {
-	margin: 0 0 20px;
+.contact-card-value {
+	color: #147d7f;
+	font-size: 1.05rem;
+	font-weight: 700;
+	line-height: 1.5;
+	overflow-wrap: anywhere;
+}
+
+.contact-info-card address {
+	font-style: normal;
+}
+
+.contact-info-card address a {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: #38a6a8;
+	text-underline-offset: 3px;
+}
+
+.contact-info-card address a:hover,
+.contact-info-card address a:focus-visible {
+	color: #147d7f;
+}
+
+.contact-info-card p {
+	margin: 14px 0 0;
 	color: #46534e;
 	line-height: 1.5;
+}
+
+.contact-action-link {
+	display: inline-block;
+	margin-top: 16px;
+	color: #147d7f;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.contact-action-link:hover,
+.contact-action-link:focus-visible {
+	color: #ef8a1c;
+	text-decoration: underline;
+}
+
+.contact-hours-list {
+	display: grid;
+	gap: 12px;
+	margin: 14px 0 0;
+}
+
+.contact-hours-list dt {
+	font-size: 0.85rem;
+	font-weight: 700;
+}
+
+.contact-hours-list dd {
+	margin: 4px 0 0;
+	color: #46534e;
+}
+
+.contact-hours-list .contact-closed {
+	color: #7a4038;
+}
+
+.contact-footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.contact-footer-content p {
+	margin: 0;
+}
+
+.contact-footer-content a {
+	color: #38a6a8;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.contact-footer-content a:hover {
+	color: #ef8a1c;
 }
 
 @media (max-width: 900px) {
@@ -567,6 +998,19 @@ body {
 	.bike-category-grid {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
+
+	.contact-card-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.category-bike-list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.bike-detail-overview {
+		grid-template-columns: minmax(0, 1fr) minmax(240px, 0.9fr);
+		gap: 24px;
+	}
 }
 
 @media (max-width: 560px) {
@@ -575,6 +1019,292 @@ body {
 	}
 
 	.bike-category-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.contact-card-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.category-bike-list {
+		grid-template-columns: 1fr;
+	}
+
+	.bike-detail-overview {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 560px) {
+	.contact-footer-content {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
+.service-booking {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 24px;
+	color: #172d27;
+}
+
+.service-calendar,
+.service-times {
+	padding: 24px;
+	border: 1px solid #d9dfd8;
+	border-radius: 12px;
+	background: #fff;
+}
+
+.calendar-heading {
+	display: grid;
+	grid-template-columns: 44px 1fr 44px;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.calendar-heading h2,
+.service-times h2 {
+	margin: 0;
+	font-size: 1.35rem;
+}
+
+.calendar-month-button,
+.calendar-day,
+.service-time-option,
+.service-option {
+	font: inherit;
+	cursor: pointer;
+}
+
+.calendar-month-button {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #d9dfd8;
+	border-radius: 8px;
+	background: #f4f5ef;
+	color: #172d27;
+	font-size: 1.5rem;
+}
+
+.calendar-month-button:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.calendar-grid {
+	display: grid;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 6px;
+}
+
+.calendar-weekday,
+.calendar-day {
+	display: grid;
+	min-height: 40px;
+	place-items: center;
+}
+
+.calendar-weekday {
+	color: #46534e;
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.calendar-day {
+	border: 1px solid #d9dfd8;
+	border-radius: 8px;
+	background: #fff;
+	color: #172d27;
+}
+
+.calendar-day:hover:not(:disabled),
+.calendar-day[aria-pressed="true"],
+.service-time-option[aria-pressed="true"],
+.service-option[aria-pressed="true"] {
+	border-color: #147d7f;
+	background: #147d7f;
+	color: #fff;
+}
+
+.calendar-day:disabled {
+	border-color: transparent;
+	background: #f0f1ed;
+	color: #a0aaa4;
+	cursor: not-allowed;
+}
+
+.calendar-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 20px;
+	margin: 16px 0 0;
+	color: #46534e;
+	font-size: 0.85rem;
+}
+
+.calendar-legend-open::before,
+.calendar-legend-closed::before {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	margin-right: 7px;
+	border-radius: 50%;
+	content: "";
+}
+
+.calendar-legend-open::before {
+	background: #147d7f;
+}
+
+.calendar-legend-closed::before {
+	background: #a0aaa4;
+}
+
+.service-times h2 {
+	margin-bottom: 8px;
+}
+
+.service-times > p {
+	margin: 0 0 16px;
+	color: #46534e;
+	line-height: 1.5;
+}
+
+.service-time-options,
+.service-options {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 10px;
+}
+
+.service-time-option,
+.service-option {
+	padding: 12px;
+	border: 1px solid #d9dfd8;
+	border-radius: 8px;
+	background: #fff;
+	color: #172d27;
+	text-align: left;
+}
+
+.service-option strong,
+.service-option span {
+	display: block;
+}
+
+.service-option span {
+	margin-top: 5px;
+	color: #46534e;
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.service-options-title,
+.service-request-form h3 {
+	margin: 24px 0 12px;
+	font-size: 1.1rem;
+}
+
+.service-request-form {
+	display: grid;
+	gap: 14px;
+	margin-top: 24px;
+}
+
+.service-request-form h3,
+.service-request-form > p {
+	margin: 0;
+}
+
+.service-request-form label {
+	display: grid;
+	gap: 6px;
+	font-weight: 700;
+}
+
+.service-request-form input,
+.service-request-form textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 12px;
+	border: 1px solid #aeb8b1;
+	border-radius: 6px;
+	background: #fff;
+	color: #172d27;
+	color-scheme: light;
+	font: inherit;
+}
+
+.service-request-form input::placeholder,
+.service-request-form textarea::placeholder {
+	color: #65716a;
+	opacity: 1;
+}
+
+.service-request-form textarea {
+	resize: vertical;
+}
+
+.service-submit {
+	justify-self: start;
+	border: 0;
+	cursor: pointer;
+}
+
+.service-booking-note,
+.service-pricing-note {
+	grid-column: 1 / -1;
+	margin: 0;
+	color: #c3ccc7;
+	line-height: 1.5;
+}
+
+.service-booking-image {
+	max-width: 640px;
+	margin: 32px auto 0;
+}
+
+.service-booking-image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.service-booking-image figcaption {
+	margin-top: 8px;
+	color: #c3ccc7;
+	text-align: center;
+}
+
+.service-booking :focus-visible {
+	outline: 3px solid #38a6a8;
+	outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+	.service-booking {
+		grid-template-columns: 1fr;
+	}
+
+	.service-booking-note,
+	.service-pricing-note {
+		grid-column: auto;
+	}
+}
+
+@media (max-width: 420px) {
+	.service-calendar,
+	.service-times {
+		padding: 16px;
+	}
+
+	.service-time-options,
+	.service-options {
 		grid-template-columns: 1fr;
 	}
 }
