@@ -76,32 +76,57 @@ const bikeCategories = {
       {
         brand: 'Canyon',
         model: 'Lux World Cup',
-        price: 3499,
+        price: 5249,
         image: 'https://flowmountainbike.com/wp-content/uploads/2023/04/2023-Canyon-Lux-World-Cup-Pack-Shots-06966.jpg'
       },
       {
         brand: 'Giant',
         model: 'Anthem',
-        price: 3899,
+        price: 5849,
         image: 'https://mbaction.com/wp-content/uploads/2025/11/Giant_Taiwan-9267-scaled.jpg'
       },
-      { brand: 'Trek', model: 'Supercaliber', price: 4999 },
-      { brand: 'Specialized', model: 'Epic', price: 5499 },
-      { brand: 'Scott', model: 'Spark RC', price: 5999 },
-      { brand: 'Santa Cruz', model: 'Blur', price: 6499 },
+      {
+        brand: 'Trek',
+        model: 'Supercaliber',
+        price: 7499,
+        image: 'https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/11/2023/08/Gen-2-Trek-Supercaliber-8.png-2048x1243.jpg'
+      },
+      {
+        brand: 'Specialized',
+        model: 'Epic',
+        price: 8249,
+        image: 'https://cdn.mos.cms.futurecdn.net/ixX8py3H76g5eifGUVZK3f.jpg'
+      },
+      {
+        brand: 'Scott',
+        model: 'Spark RC',
+        price: 8999,
+        image: 'https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/11/2022/10/Untitled-design-2022-10-19T200616.476.jpg'
+      },
+      {
+        brand: 'Santa Cruz',
+        model: 'Blur',
+        price: 9749,
+        image: 'https://cdn.shopify.com/s/files/1/0483/9040/6312/files/SantaCruz_Blur_Gray_XX1_1.jpg?v=1640905151'
+      },
       {
         brand: 'Cube',
         model: 'AMS',
-        price: 4299,
+        price: 6449,
         image: 'https://bike-test.com/wp-content/uploads/2025/03/Cube-AMS-Zero-99-2-scaled.jpg'
       },
       {
         brand: 'Kona',
         model: 'Hei Hei',
-        price: 3899,
+        price: 5849,
         image: 'https://blisterreview.com/wp-content/uploads/2025/04/HEI-HEI-NZ-2025-2162.jpg'
       },
-      { brand: 'Rocky Mountain', model: 'Element', price: 4999 }
+      {
+        brand: 'Rocky Mountain',
+        model: 'Element',
+        price: 7499,
+        image: 'https://cdn.shopify.com/s/files/1/0449/1496/6691/collections/rocky-mountain-element-models_1400x.jpg?v=1632839550'
+      }
     ]
   },
   trail: {
@@ -109,15 +134,60 @@ const bikeCategories = {
     description: 'Versatile mountain bikes ready for technical singletrack and all-day rides.',
     bikeBlurb: 'A versatile trail companion designed to balance confident descents with all-day pedalling.',
     bikes: [
-      { brand: 'Canyon', model: 'Neuron', price: 2999 },
-      { brand: 'Giant', model: 'Trance', price: 3799 },
-      { brand: 'Trek', model: 'Fuel EX', price: 4299 },
-      { brand: 'Specialized', model: 'Stumpjumper', price: 4999 },
-      { brand: 'Scott', model: 'Genius', price: 4799 },
-      { brand: 'Santa Cruz', model: '5010', price: 5699 },
-      { brand: 'Cube', model: 'Stereo ONE44', price: 3999 },
-      { brand: 'Kona', model: 'Process 134', price: 4499 },
-      { brand: 'Rocky Mountain', model: 'Instinct', price: 4999 }
+      {
+        brand: 'Canyon',
+        model: 'Spectral',
+        price: 4679,
+        image: 'https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/11/2025/04/585696-Canyon_Koblenz_0O9A0014-f7e60b-original-1744117183-1-scaled-e1745317954640-2048x1304.jpg'
+      },
+      {
+        brand: 'Giant',
+        model: 'Trance',
+        price: 4939,
+        image: 'https://images2.giant-bicycles.com/nzzrfrmgy5slcbvw3yaw/TranceXAdvanced0profile.jpg'
+      },
+      {
+        brand: 'Trek',
+        model: 'Fuel EX',
+        price: 5589,
+        image: 'https://flowmountainbike.com/wp-content/uploads/2022/07/2023-Trek-Fuel-EXe-XX1-AXS-Pack-Shots-01236.jpg'
+      },
+      {
+        brand: 'Specialized',
+        model: 'Stumpjumper',
+        price: 6499,
+        image: 'https://flowmountainbike.com/wp-content/uploads/2024/07/2025-Specialized-Stumpjumper-15-Pro-07156.jpg'
+      },
+      {
+        brand: 'Scott',
+        model: 'Genius',
+        price: 6239,
+        image: 'https://flowmountainbike.com/wp-content/uploads/2022/10/2023-Scott-Genius-910-03616.jpg'
+      },
+      {
+        brand: 'Santa Cruz',
+        model: '5010',
+        price: 7409,
+        image: 'https://c02.purpledshub.com/uploads/sites/39/2020/09/Santa-Cruz-5010-CC-X01-RSV-01-1acc4f3.jpg'
+      },
+      {
+        brand: 'Cube',
+        model: 'Stereo',
+        price: 5199,
+        image: 'https://pub-f154438dceef491ba243fbee53912d51.r2.dev/wp-content/uploads/2024/04/17191628/cube_stereo_140_hpc_rookie.jpg'
+      },
+      {
+        brand: 'Kona',
+        model: 'Process 134',
+        price: 5849,
+        image: 'https://pub-f154438dceef491ba243fbee53912d51.r2.dev/wp-content/uploads/2023/03/22114808/Kona-Process-134-080-FS_1.jpg'
+      },
+      {
+        brand: 'Rocky Mountain',
+        model: 'Instinct',
+        price: 6499,
+        image: 'https://nsmb.com/media/images/DSC00542_deniz_merdano_rocky_mountain_instinct_.original.jpg'
+      }
     ]
   },
   enduro: {
@@ -125,15 +195,60 @@ const bikeCategories = {
     description: 'Big-travel bikes for demanding descents that can still get you back to the top.',
     bikeBlurb: 'A big-travel mountain bike made for demanding descents and getting back to the top.',
     bikes: [
-      { brand: 'Canyon', model: 'Strive', price: 5499 },
-      { brand: 'Giant', model: 'Reign', price: 5999 },
-      { brand: 'Trek', model: 'Slash', price: 6299 },
-      { brand: 'Specialized', model: 'Enduro', price: 6499 },
-      { brand: 'Scott', model: 'Ransom', price: 6999 },
-      { brand: 'Santa Cruz', model: 'Megatower', price: 7499 },
-      { brand: 'Cube', model: 'Stereo ONE77', price: 5499 },
-      { brand: 'Kona', model: 'Process X', price: 5799 },
-      { brand: 'Rocky Mountain', model: 'Altitude', price: 6999 }
+      {
+        brand: 'Canyon',
+        model: 'Strive',
+        price: 5499,
+        image: 'https://c02.purpledshub.com/uploads/sites/39/2022/10/Canyon-Strive-33329ce.jpg'
+      },
+      {
+        brand: 'Giant',
+        model: 'Reign',
+        price: 5999,
+        image: 'https://ep1.pinkbike.org/p6pb24148277/p6pb24148277.jpg'
+      },
+      {
+        brand: 'Trek',
+        model: 'Slash',
+        price: 6299,
+        image: 'https://flowmountainbike.com/wp-content/uploads/2024/10/2025-Trek-Slash-9.9-X0-AXS-08033.jpg'
+      },
+      {
+        brand: 'Specialized',
+        model: 'Status',
+        price: 6499,
+        image: 'https://enduro-mtb.com/wp-content/uploads/2024/10/Specialized_Status_2024_DH_Test_END_WEB_Res-2294.jpg'
+      },
+      {
+        brand: 'Scott',
+        model: 'Ransom',
+        price: 6999,
+        image: 'https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/11/2024/01/SCOTT_BIKE_RANSOM-900-RC_PHOTO_BY_Daniel_Geiger_0047%C2%A9DGPS-1-scaled.jpg'
+      },
+      {
+        brand: 'Santa Cruz',
+        model: 'Megatower',
+        price: 7499,
+        image: 'https://enduro-mtb.com/wp-content/uploads/2022/12/Santa_Cruz_Megatower_CC_X01_AXS_Vergleichstest_beste_Enduro_2023_END_WEB_Res-6906-1536x1024.jpg'
+      },
+      {
+        brand: 'Cube',
+        model: 'Stereo ONE77',
+        price: 5499,
+        image: 'https://endhuro-bike.com/wp-content/uploads/2022/07/DSC06487-1024x576.jpg'
+      },
+      {
+        brand: 'Kona',
+        model: 'Process X',
+        price: 5799,
+        image: 'https://p.vitalmtb.com/styles/max_2600x2600/s3/photos/stories/2023/09/13/2K23-Process-X-Location-8548-sml.jpg?VersionId=m7RE.JG7x6BV3ECeiNXXpozgdws_qqau&itok=EKw-zZfe'
+      },
+      {
+        brand: 'Rocky Mountain',
+        model: 'Altitude',
+        price: 6999,
+        image: 'https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/11/2024/04/Print_Altitude_MRiga_Product_BrohmRidgeBC_MRP7724.jpg'
+      }
     ]
   },
   dh: {
@@ -141,15 +256,61 @@ const bikeCategories = {
     description: 'Gravity-focused bikes made for steep tracks, bike parks, and downhill runs.',
     bikeBlurb: 'A gravity-focused machine for steep tracks, bike parks, and full-speed downhill runs.',
     bikes: [
-      { brand: 'Canyon', model: 'Sender', price: 4999 },
-      { brand: 'Giant', model: 'Glory', price: 5999 },
-      { brand: 'Trek', model: 'Session', price: 6999 },
-      { brand: 'Specialized', model: 'Demo', price: 6499 },
-      { brand: 'Scott', model: 'Gambler', price: 7499 },
-      { brand: 'Santa Cruz', model: 'V10', price: 8999 },
-      { brand: 'Cube', model: 'Two15', price: 4999 },
-      { brand: 'Kona', model: 'Operator', price: 5999 },
-      { brand: 'Rocky Mountain', model: 'Maiden', price: 7999 }
+      {
+        brand: 'Canyon',
+        model: 'Sender',
+        price: 4999,
+        image: 'https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/11/2024/02/IMG_9449-1536x1024.jpg'
+      },
+      {
+        brand: 'Giant',
+        model: 'Glory',
+        price: 5999,
+        image: 'https://enduro-mtb.com/wp-content/uploads/2024/09/Giant_Glory_2024_DH_Test_ENDURO_61_WEB_Res-0348-1140x760.jpg'
+      },
+      {
+        brand: 'Trek',
+        model: 'Session',
+        price: 6999,
+        image: 'https://www.uniorsinter.com/wp-content/blogs.dir/37/files/2024/05/240406-treksession-11-min.jpg'
+      },
+      {
+        brand: 'Specialized',
+        model: 'Demo',
+        price: 6499,
+        image: 'https://p.vitalmtb.com/photos/users/94/photos/139094/s1600_demo_29_black.jpg',
+        imageFit: 'contain'
+      },
+      {
+        brand: 'Scott',
+        model: 'Gambler',
+        price: 7499,
+        image: 'https://p.vitalmtb.com/styles/full_size_1600/s3/photos/press_release/141026/title_image/cover.jpg?VersionId=6elF_9f8Jxth_T52.5HCrSrz7IVS.43x&itok=IHYSSUPw'
+      },
+      {
+        brand: 'Santa Cruz',
+        model: 'V10',
+        price: 8999,
+        image: 'https://www.santacruzbicycles.com/cdn/shop/files/LesGets24_M3_2416.jpg?v=1736530197&width=3000'
+      },
+      {
+        brand: 'Cube',
+        model: 'Two15',
+        price: 4999,
+        image: 'https://www.bikes4sale.com/pictures/default/cube-two15-race/cube-two15-race-pic-1.jpg'
+      },
+      {
+        brand: 'Kona',
+        model: 'Operator',
+        price: 5999,
+        image: 'https://nsmb.com/media/images/Image_1.width-1920.jpg'
+      },
+      {
+        brand: 'Rocky Mountain',
+        model: 'Maiden',
+        price: 7999,
+        image: 'https://resources.bikes.com/sites/default/files/styles/model_image_slider/public/models/Web_Maiden_WorldCup_Hero.jpg?itok=1ovmGZgx'
+      }
     ]
   },
   ebikes: {
@@ -157,15 +318,60 @@ const bikeCategories = {
     description: 'Electric assistance helps you ride farther, climb easier, and enjoy more time out.',
     bikeBlurb: 'Electric assistance helps make longer rides and steep climbs more accessible.',
     bikes: [
-      { brand: 'Canyon', model: 'Spectral:ON', price: 6999 },
-      { brand: 'Giant', model: 'Trance X Advanced E+', price: 7999 },
-      { brand: 'Trek', model: 'Rail', price: 8499 },
-      { brand: 'Specialized', model: 'Turbo Levo', price: 8999 },
-      { brand: 'Scott', model: 'Patron eRIDE', price: 9499 },
-      { brand: 'Santa Cruz', model: 'Heckler', price: 9999 },
-      { brand: 'Cube', model: 'Stereo Hybrid ONE44', price: 6499 },
-      { brand: 'Kona', model: 'Remote', price: 6999 },
-      { brand: 'Rocky Mountain', model: 'Altitude Powerplay', price: 10999 }
+      {
+        brand: 'Canyon',
+        model: 'Spectral:ON',
+        price: 6999,
+        image: 'https://flowmountainbike.com/wp-content/uploads/2022/08/2023-Canyon-Spectral-ON-CFR-Pack-Shots-01889.jpg'
+      },
+      {
+        brand: 'Giant',
+        model: 'Trance X Advanced E+',
+        price: 7999,
+        image: 'https://p.vitalmtb.com/styles/max_2600x2600/s3/photos/stories/2023/03/20/MY23_Trance_X_Adv_Elite_E_0_Product_HiRes_11.jpg?VersionId=5MHGK.WGyxC0ZHUfwBY53wITDieD7OCc&itok=K2qGnQEJ'
+      },
+      {
+        brand: 'Trek',
+        model: 'Rail',
+        price: 8499,
+        image: 'https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/11/2023/06/Untitled-design-2023-06-22T125008.784-1536x864.jpg'
+      },
+      {
+        brand: 'Specialized',
+        model: 'Turbo Levo',
+        price: 8999,
+        image: 'https://www.wideopenmountainbike.com/images/Specialized-Levo-Comp-Carbon-Blue-7838.jpg'
+      },
+      {
+        brand: 'Scott',
+        model: 'Patron eRIDE',
+        price: 9499,
+        image: 'https://flowmountainbike.com/wp-content/uploads/2022/08/Scott-Patron-eRide-900-Tuned-Pack-Shots-02229.jpg'
+      },
+      {
+        brand: 'Santa Cruz',
+        model: 'Heckler',
+        price: 9999,
+        image: 'https://enduro-mtb.com/wp-content/uploads/2023/09/Santa_Cruz_Heckler_SL_2024_Review_EMTB_WEB_Res-4677.jpg'
+      },
+      {
+        brand: 'Cube',
+        model: 'Stereo Hybrid ONE44',
+        price: 6499,
+        image: 'https://www.theelectricbikeshop.co.uk/content/products/10215-shift-blush-raisin2-2026-cube-stereo-hybrid-one44-pro-800-electric-full-suspension-mountain-bike-in-shift-blush-raisin.jpg'
+      },
+      {
+        brand: 'Kona',
+        model: 'Remote',
+        price: 6999,
+        image: 'https://nsmb.com/media/images/Remote_160_DL_SCC09369.width-1920.jpg'
+      },
+      {
+        brand: 'Rocky Mountain',
+        model: 'Altitude Powerplay',
+        price: 10999,
+        image: 'https://ebike-mtb.com/wp-content/uploads/sites/2/2025/04/Rocky-Mountain-Instinct-Powerplay-SL-2025-EMTB-Test-4091-1536x1025.jpg'
+      }
     ]
   },
   road: {
@@ -173,15 +379,62 @@ const bikeCategories = {
     description: 'Lightweight, quick bikes for smooth roads, longer rides, and fitness goals.',
     bikeBlurb: 'A quick, lightweight ride for smooth roads, longer distances, and fitness goals.',
     bikes: [
-      { brand: 'Canyon', model: 'Endurace', price: 2599 },
-      { brand: 'Giant', model: 'Defy', price: 2999 },
-      { brand: 'Trek', model: 'Domane', price: 3499 },
-      { brand: 'Specialized', model: 'Roubaix', price: 3999 },
-      { brand: 'Scott', model: 'Addict', price: 4299 },
-      { brand: 'Santa Cruz', model: 'Stigmata (gravel)', price: 3999 },
-      { brand: 'Cube', model: 'Agree', price: 3299 },
-      { brand: 'Kona', model: 'Rove (gravel)', price: 2199 },
-      { brand: 'Rocky Mountain', model: 'Solo (gravel)', price: 2699 }
+      {
+        brand: 'Canyon',
+        model: 'Endurace',
+        price: 2599,
+        image: 'https://hips.hearstapps.com/hmg-prod/images/canyon-endurace-allroad2-693c58da16986.jpg?crop=1xw%3A1xh%3Bcenter%2Ctop'
+      },
+      {
+        brand: 'Giant',
+        model: 'Defy',
+        price: 2999,
+        image: 'https://c02.purpledshub.com/uploads/sites/39/2022/08/Giant-Defy-Advanced-0-01-9f8cca0.jpg'
+      },
+      {
+        brand: 'Trek',
+        model: 'Domane',
+        price: 3499,
+        image: 'https://www.velovision.fr/wp-content/uploads/2025/06/sur_cette_image_o_image-8.jpeg'
+      },
+      {
+        brand: 'Specialized',
+        model: 'Roubaix',
+        price: 3999,
+        image: 'https://daxstreet.com/wp-content/uploads/2025/02/Specialized-Roubaix.jpg'
+      },
+      {
+        brand: 'Scott',
+        model: 'Addict',
+        price: 4299,
+        image: 'https://assets.scott-sports.com/pages/addict/addict-gallery-2022-1-5-1600x900.jpg'
+      },
+      {
+        brand: 'Santa Cruz',
+        model: 'Stigmata (gravel)',
+        price: 3999,
+        image: 'https://bikepacking.com/wp-content/uploads/2019/05/Santa-Cruz-Stigmata-CC_2.jpg'
+      },
+      {
+        brand: 'Cube',
+        model: 'Agree',
+        price: 4124,
+        image: 'https://file.cube.eu/azwesc1xfg346/media/3a/56/c0/1725092022/synqup_826500_S_00.jpg?ts=1743831501',
+        imageFit: 'contain'
+      },
+      {
+        brand: 'Kona',
+        model: 'Rove (gravel)',
+        price: 2199,
+        image: 'https://bikes.com.au/cdn/shop/files/Kona_Rove_DL_Gravel_Bike_-_Gloss_Mocha_0001.jpg?v=1766448452',
+        imageFit: 'contain'
+      },
+      {
+        brand: 'Rocky Mountain',
+        model: 'Solo (gravel)',
+        price: 2699,
+        image: 'https://pub-f154438dceef491ba243fbee53912d51.r2.dev/wp-content/uploads/2022/12/19131840/RockyMountain_Solo_Detail4_PS..jpg'
+      }
     ]
   },
   hybrid: {
@@ -189,15 +442,62 @@ const bikeCategories = {
     description: 'Comfortable, practical bikes for commuting, errands, and relaxed rides.',
     bikeBlurb: 'A practical, comfortable choice for commuting, errands, and relaxed everyday rides.',
     bikes: [
-      { brand: 'Canyon', model: 'Roadlite', price: 1299 },
-      { brand: 'Giant', model: 'Escape', price: 1099 },
-      { brand: 'Trek', model: 'FX', price: 1199 },
-      { brand: 'Specialized', model: 'Sirrus', price: 1399 },
-      { brand: 'Scott', model: 'Sub Cross', price: 1499 },
-      { brand: 'Santa Cruz', model: 'Skitch (electric flat-bar)', price: 4999 },
-      { brand: 'Cube', model: 'Nature', price: 1199 },
-      { brand: 'Kona', model: 'Dew', price: 999 },
-      { brand: 'Rocky Mountain', model: 'Fusion (flat-bar crossover)', price: 1399 }
+      {
+        brand: 'Canyon',
+        model: 'Roadlite',
+        price: 1299,
+        image: 'https://hips.hearstapps.com/hmg-prod/images/canyon-roadlite-0003-1584735070.jpg?crop=0.838xw%3A0.630xh%3B0.0433xw%2C0.178xh&resize=1200%3A*'
+      },
+      {
+        brand: 'Giant',
+        model: 'Escape',
+        price: 1099,
+        image: 'https://tredz.azureedge.net/assets/Images/UserPages/content-images/guides-reviews/reviews/hybrid-bikes/giant-escape/2018-giant-escape-main.jpg',
+        imageFit: 'contain'
+      },
+      {
+        brand: 'Trek',
+        model: 'FX',
+        price: 1199,
+        image: 'https://www.balfesbikes.co.uk/images/products/D/DS/dsc06948.jpg?width=1920&format=webp'
+      },
+      {
+        brand: 'Specialized',
+        model: 'Sirrus',
+        price: 1399,
+        image: 'https://hips.hearstapps.com/hmg-prod/images/specialized-sirrus-x-4-0006-tested-1584728981.jpg'
+      },
+      {
+        brand: 'Scott',
+        model: 'Sub Cross',
+        price: 1499,
+        image: 'https://asset.scott-sports.com/fit-in/2000x2000/425/4253818323A_2260718.png?signature=97578093926b94031226d7ea2d7d7726fc6fe989ce330c811f67f03316254dcb',
+        imageFit: 'contain'
+      },
+      {
+        brand: 'Santa Cruz',
+        model: 'Skitch (electric flat-bar)',
+        price: 4999,
+        image: 'https://www.bikes4sale.com/pictures/default/santa-cruz-skitch-apex-carbon-cc/santa-cruz-skitch-apex-carbon-cc-pic-2.jpg'
+      },
+      {
+        brand: 'Cube',
+        model: 'Nature',
+        price: 1199,
+        image: 'https://www.radwelt.store/media/g0/0a/9e/1721987422/Cube_2024_Nature_Pro_frostwhite_n_grey.jpg'
+      },
+      {
+        brand: 'Kona',
+        model: 'Dew',
+        price: 999,
+        image: 'https://cdn.shoplightspeed.com/shops/623843/files/70230122/kona-kona-dew-dl-jade-green.jpg'
+      },
+      {
+        brand: 'Rocky Mountain',
+        model: 'Fusion (flat-bar crossover)',
+        price: 1399,
+        image: 'https://resources.bikes.com/sites/default/files/styles/model_image_slider_hires5k/public/models/Web_MY21_Fusion_10_C1_Profile.jpg?itok=isjtDk5X'
+      }
     ]
   }
 };
@@ -321,7 +621,7 @@ if (heroCarousel && heroCarouselImage) {
   const startRotation = () => {
     stopRotation();
     if (!reducedMotion) {
-      rotationTimer = window.setInterval(() => showSlide(currentSlide + 1), 5000);
+      rotationTimer = window.setInterval(() => showSlide(currentSlide + 1), 3000);
     }
   };
 
@@ -357,13 +657,13 @@ if (categoryPageName && categoryPageTitle && categoryPageDescription && category
 
     [...category.bikes]
       .sort((first, second) => first.price - second.price)
-      .forEach(({ brand, model, price, image }) => {
+      .forEach(({ brand, model, price, image, imageFit }) => {
         const bikeCard = document.createElement('article');
         bikeCard.className = 'category-bike-card';
 
         if (image) {
           const bikeImage = document.createElement('img');
-          bikeImage.className = 'category-bike-image';
+          bikeImage.className = `category-bike-image${imageFit === 'contain' ? ' category-bike-image-contain' : ''}`;
           bikeImage.src = image;
           bikeImage.alt = `${brand} ${model} bike`;
           bikeCard.append(bikeImage);
@@ -441,6 +741,7 @@ if (bikeDetail) {
     if (bike.image) {
       bikeImage.src = bike.image;
       bikeImage.alt = `${bike.brand} ${bike.model} bike`;
+      bikeImage.classList.toggle('bike-detail-image-contain', bike.imageFit === 'contain');
       bikeImage.addEventListener('error', () => {
         bikeImage.hidden = true;
         bikeImageNote.hidden = false;

@@ -292,7 +292,7 @@ body {
 .hero-eyebrow {
 	margin: 0 0 18px;
 	color: #38a6a8;
-	font-size: 0.85rem;
+	font-size: 1.1rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -634,6 +634,11 @@ body {
 	object-fit: cover;
 }
 
+.category-bike-image.category-bike-image-contain {
+	background: #f5f5f5;
+	object-fit: contain;
+}
+
 .category-bike-brand {
 	margin: 0 0 8px;
 	color: #147d7f;
@@ -797,6 +802,11 @@ body {
 	object-fit: cover;
 }
 
+.bike-detail-image-wrap img.bike-detail-image-contain {
+	background: #f5f5f5;
+	object-fit: contain;
+}
+
 .bike-detail-image-wrap img[hidden] {
 	display: none;
 }
@@ -858,10 +868,6 @@ body {
 
 .contact-page-header {
 	margin-bottom: 32px;
-}
-
-.contact-page-header .hero-eyebrow {
-	font-size: 1.05rem;
 }
 
 .contact-page-header h1 {
