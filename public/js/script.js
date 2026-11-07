@@ -555,6 +555,26 @@ const saveCart = (cart) => {
   }
 };
 
+const updateCartCount = () => {
+  const cart = readCart();
+  if (!cart) {
+    return;
+  }
+
+  const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
+  document.querySelectorAll('[data-cart-count]').forEach((count) => {
+    count.textContent = String(itemCount);
+    count.setAttribute('aria-label', `${itemCount} ${itemCount === 1 ? 'item' : 'items'}`);
+  });
+};
+
+updateCartCount();
+window.addEventListener('storage', (event) => {
+  if (event.key === cartStorageKey) {
+    updateCartCount();
+  }
+});
+
 document.querySelectorAll('[data-category-price]').forEach((priceLabel) => {
   const category = bikeCategories[priceLabel.dataset.categoryPrice];
   if (!category) {
@@ -785,6 +805,7 @@ if (bikeDetail) {
       }
 
       if (saveCart(cart)) {
+        updateCartCount();
         showCartStatus(`${bike.brand} ${bike.model} (${frameSize}) added to your cart.`);
       }
     });
